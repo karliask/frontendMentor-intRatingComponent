@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #141519;
+    font-family: 'Noto Sans Mono', monospace;
+    color: #969da7;
+    user-select: none;
+}
+
+h1{
+    text-align: center;
+    color: #fff
+}
+
+h2{
+    color: #fff;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+svg{
+    display: block;
+    margin: auto;
+}
+
+.card{
+    background: linear-gradient(#1e252d, #171e28);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
+    height: 350px;
+    z-index: 1;
+}
+
+.end{
+    background: linear-gradient(#1e252d, #171e28);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
+    height: 350px;
+    z-index: 0;
+    visibility: hidden;
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.number{
+    background: #272e38;
+    border-radius: 50%;
+    padding: 12px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    transition: background 0.3s ease, font-size 0.1s linear;
+}
+
+.end p{
+    width: auto;
+    text-align: center;
+}
+
+.end svg{
+    text-align: center
+}
+
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover{
+    background: #7c8898;
+    color: #fff
+}
+
+#one:focus, #two:focus, #three:focus, #four:focus, #five:focus{
+    background: #fc7613;
+    color: #fff
+}
+
+#submit{
+    background: #fc7613;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 15px
+}
+
+#submit:hover{
+    background: #fff;
+    color: #fc7613
+}
+
+#star{
+    background: #272e38;
+    padding: 20px;
+    border-radius: 50%;
+    width: 17px;
+    height: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#endSelected{
+    color:#fc7613;
+    background: #272e38;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#svgEnd{
+    margin-bottom: 40px
+}
+
+
+@media(max-width: 770px){
+    p{
+        font-size: 0.8rem;
+    }
+
+    h1{
+        font-size: 1.2rem
+    }
+    svg{
+        transform: scale(0.7);
+        margin: auto;
+        display: block
+    }
+
+    .numbers{
+        font-size: 0.5rem
+    }
+
+    .number{
+        width: 16px;
+        height: 16px;
+        font-size: 0.8rem
+    }
+
+    #endSelected{
+        font-size: 0.8rem
+    }
+
+    #card h2{
+        font-size: 0.8rem
+    }
+
+    #submit{
+        font-size: 0.7rem
+    }
+
+    #end, #card{
+        width: 70%
+    }
+
+}
